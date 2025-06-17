@@ -7,12 +7,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import { Button } from 'react-bootstrap';
 import MReservar from './Components/Modals';
+import { ModalsUsers } from './ModalsUsers';
 
-// Enum debe estar fuera del componente
- enum ModalsUsers {
-  NONE = 'NONE',
-  MODAL_V = 'MODAL_V',
-}
 
 function App() {
 const [modalType, setModalType] = useState<ModalsUsers>(ModalsUsers.NONE);

@@ -174,13 +174,17 @@ const MReservar: React.FC<MReservarProps> = ({ show, handleClose }) => {
                 </h5>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="primary" onClick={handleAddToCart}>
+                <Button variant="primary" onClick={handleAddToCart} size="lg">
                     Agregar al carrito
                 </Button>
             </Modal.Footer>
-            <div className="text-center mb-2">
-                <a href="#">Políticas de cancelación</a>
-            </div>
+        <div className="text-center mt-3">
+  <a href="#" className="text-decoration-none text-dark">
+    Políticas de cancelación
+  </a>
+</div>
+
+
         </Modal>
     );
 };
